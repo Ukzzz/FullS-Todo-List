@@ -7,26 +7,26 @@ function App() {
   const [task, setTask] = useState('');
 
   const fetchTodos = async () => {
-    const res = await axios.get('http://localhost:5000/api/todo');
+    const res = await axios.get('https://full-stack-todo-62go.onrender.com/api/todo');
     setTodos(res.data);
   };
 
   const addTodo = async () => {
     if (!task.trim()) return;
-    await axios.post('http://localhost:5000/api/todo', { task });
+    await axios.post('https://full-stack-todo-62go.onrender.com/api/todo', { task });
     setTask('');
     fetchTodos();
   };
 
   const deleteTodo = async (id) => {
-    await axios.delete(`http://localhost:5000/api/todo/${id}`);
+    await axios.delete(`https://full-stack-todo-62go.onrender.com/api/todo/${id}`);
     fetchTodos();
   };
 
 
   const toggleTodo = async (id) => {
     const todo = todos.find(t => t._id === id);
-    await axios.put(`http://localhost:5000/api/todo/${id}`, { completed: !todo.completed });
+    await axios.put(`https://full-stack-todo-62go.onrender.com/api/todo/${id}`, { completed: !todo.completed });
     fetchTodos();
   };
 
