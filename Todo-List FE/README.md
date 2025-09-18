@@ -1,14 +1,76 @@
-# Getting Started with Create React App
+# MERN Stack Todo List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Todo List application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). This application allows users to create, read, update, and delete todo items with a clean and responsive user interface.
 
-## Available Scripts
+## 🚀 Features
+
+- **Create** new todo items
+- **View** all existing todos
+- **Toggle** todo completion status
+- **Delete** todos you no longer need
+- **Responsive design** that works on all devices
+- **Real-time updates** with database synchronization
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js v19.1.0
+- **Backend**: Node.js with Express.js
+- **Database**: MongoDB with Mongoose ODM
+- **Styling**: Bootstrap 5.3.6
+- **HTTP Client**: Axios
+
+## 📦 Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher) or yarn
+- MongoDB Atlas account or local MongoDB installation
+
+## 🚀 Getting Started
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+   ```bash
+   cd Todo-List BE
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the backend root directory with your MongoDB connection string:
+   ```
+   MONGO_API_KEY=your_mongodb_connection_string
+   PORT=5000
+   ```
+4. Start the backend server:
+   ```bash
+   npm start
+   ```
+   The server will run on `http://localhost:5000`
+
+### Frontend Setup
+
+1. Open a new terminal and navigate to the frontend directory:
+   ```bash
+   cd Todo-List FE
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. The application will automatically open in your default browser at `http://localhost:3000`
+
+## 🧪 Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
